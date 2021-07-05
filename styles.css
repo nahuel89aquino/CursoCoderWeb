@@ -65,11 +65,11 @@ main{
     padding-top: 12rem;
 }
 
-.menu-link{
+.menuLink{
     text-decoration: none;
 }
 
-h1, footer, .menu-link, header p {
+h1, footer, .menuLink, header p {
     color:white;
 }
 
@@ -80,7 +80,7 @@ aside{
 }
 
 
-.courses-banner{
+.coursesBanner{
     background-image: url("icons/file_type_image_icon_130532.png");
     background-repeat: no-repeat;
     background-position: top;
@@ -89,7 +89,7 @@ aside{
 
 }
 
-.courses-banner li{
+.coursesBanner li{
     display: inline-block;
     background-color: white;
     padding: 4px;
@@ -100,7 +100,7 @@ aside{
     
 }
 
-.courses-details{
+.coursesDetails{
     background-color: #2A4359;
     
     color: white;
@@ -108,13 +108,13 @@ aside{
     height: 60%;
 }
 
-.courses-details div{
+.coursesDetails div{
     display: flex;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.courses-details p{
+.coursesDetails p{
     text-align: center; 
     align-self: center;
     margin-right: 0.5rem;
@@ -126,7 +126,7 @@ aside{
     background-color: #011126;
 }
 
-.courses-details iframe{
+.coursesDetails iframe{
     width: 60%;
     max-height: 100%;
 }
@@ -158,7 +158,7 @@ table li li{
 
 }
 
-.instructor-card{
+.instructorCard{
     background-color: white;
     width: 60%;
     border-radius: 4px;
@@ -172,11 +172,11 @@ table li li{
     display: inline-block;
 }*/
 
-.instructor-card-image{
+.instructorCardImage{
     width: 400px;
     height: 400px;
 }
-.instructor-card-info{
+.instructorCardInfo{
     text-align: center; 
     align-self: center;
     padding: 1rem;
@@ -184,17 +184,17 @@ table li li{
     
 }
 
-.instructor-card-info h3, .instructor-card-info p{
+.instructoCardInfo h3, .instructorCardInfo p{
     margin-bottom: 1rem;
 }
 
-.instructor-card-links{
+.instructorCardLinks{
     margin-left: 0.5rem;
     width:20px; 
     height:20px;
 }
 
-.form-card{
+.formCard{
     background-color: white;
     width: 1000px;
     border-radius: 4px;
@@ -213,13 +213,15 @@ footer p{
     line-height: 1.5;
 }
 
-footer .footer-links{
+footer .footerLinks{
     
     float: right;
     margin-right: 1rem;
 } 
 
 footer img{
+    width: 20px;
+    height: 20px;
     margin-left: 1rem;
     filter: invert();
 }
