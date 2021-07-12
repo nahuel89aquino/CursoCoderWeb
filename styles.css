@@ -19,29 +19,36 @@ header {
     padding-bottom: 1rem;
     width: 100%;
     max-height: 10rem;
-    position: fixed;
+    
   }
 
-header div{
-    display: inline;
-}
 
-header nav {
-    width: 90%;
-    float:right;
+header .navBar {
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    padding-top: 1rem;
     text-align: right;
+    background-color: #0111269d
 }
 
 header a{
-    
+    float:left;
     font-size: 1.2rem;
     font-weight: 600;
 }
-
+header .menu{
+    float:right;
+}
 h1, h2{
+    clear: right;
     font-weight: bold;
     padding: 1rem;
     text-align: center;
+}
+h1{
+    margin-top: 10vh;
 }
 
 li{
@@ -49,24 +56,28 @@ li{
     list-style-type: none;
 }
 
+.menuLink{
+    text-decoration: none;
+}
 header li{
-    margin-right: 1rem;    
-    display: inline;
+    margin-right: 2rem;   
+    padding: 8px; 
+    display: inline-block;
 }
 
 header p{
     font-weight: 300;
     text-align: center;
-
 }
 
 main{
-    
-    padding-top: 12rem;
+    padding-top: 5vh;
 }
 
-.menuLink{
-    text-decoration: none;
+.menu li:hover{
+    padding-bottom: 2px;
+    border-radius: 4px;
+    border-bottom: 4px solid gold;
 }
 
 h1, footer, .menuLink, header p {
@@ -75,29 +86,39 @@ h1, footer, .menuLink, header p {
 
 aside{
     background-color: #84A4BF;
-    padding-bottom: 1rem;
-    
+    padding-bottom: 1rem; 
 }
-
 
 .coursesBanner{
-    background-image: url("icons/file_type_image_icon_130532.png");
-    background-repeat: no-repeat;
-    background-position: top;
     height: 40%;
-    padding: 2rem;
-
+    margin-left:5%;
+    margin-right: 5%;
+    margin-bottom: 2vh;
+    width: 90%;
+    
+}
+.coursesBanner li{
+    display: inline;
 }
 
-.coursesBanner li{
+.courseCard{
     display: inline-block;
-    background-color: white;
-    padding: 4px;
-    width: 400px;
-    margin: 4px;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px 0 grey;
-    
+    background-color: teal;
+    width: 60vw;
+    height: 60vh;
+}
+.courseInfo a{
+    text-decoration: none;
+    color: white;
+}
+.courseInfo{
+    background-color: #2A4359;
+    color: white;
+    padding: 10px;
+    width: 40vw;
+    height: 25vh;
+    top:5%;
+    left:3%;
 }
 
 .coursesDetails{
@@ -131,56 +152,36 @@ aside{
     max-height: 100%;
 }
 
-table{
-    width: 100%;
-    padding:1rem 2rem 1rem 2rem;
-}
-
- th, td{
-    padding: 1.5rem;
-    border-spacing: 2px;
-    border: 1px solid #84A4BF;
-    
-}
-
-table th{
-    background-color: #2A4359 ;
-    color: white;
-}
-
-table li{
-    list-style-position: outside;
-}
-
-table li li{
-    list-style-type: square;
-    list-style-position: inside;
-
-}
-
 .instructorCard{
-    background-color: white;
     width: 60%;
-    border-radius: 4px;
-    box-shadow: 0 4px 8px 0 grey;
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
 }
 
-/*.instructor-card-image, .instructor-card-info{
-    display: inline-block;
-}*/
+.absolute{
+    position: relative;
+}
+
+.relative{
+    position: relative;
+}
+
+.left{
+    left:-5%;
+}
 
 .instructorCardImage{
     width: 400px;
     height: 400px;
 }
 .instructorCardInfo{
+    background-color: #2A4359;
+    color: white;
     text-align: center; 
     align-self: center;
     padding: 1rem;
-    max-height: 100%;
+    height: 50vh;
     
 }
 
@@ -191,6 +192,7 @@ table li li{
 .instructorCardLinks{
     margin-left: 0.5rem;
     width:20px; 
+    filter: invert();
     height:20px;
 }
 
