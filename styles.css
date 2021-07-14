@@ -113,22 +113,19 @@ aside{
 }
 
 .coursesBanner{
-    height: 40%;
-    margin-left:5%;
-    margin-right: 5%;
-    margin-bottom: 2vh;
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     width: 90%;
     
 }
-.coursesBanner li{
-    display: inline;
-}
 
 .courseCard{
-    display: inline-block;
     background-color: teal;
     width: 60vw;
-    height: 60vh;
+    height: 50vh;
 }
 .courseInfo a{
     text-decoration: none;
