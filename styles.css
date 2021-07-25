@@ -27,6 +27,17 @@ h1, footer, .menuLink, header p {
     color:white;
 }
 
+.color1{
+    background-color: #2A4359;
+}
+
+.color2{
+    background-color: #011126;
+}
+
+.color3{
+    background-color: #84A4BF;
+}
 
 @media only screen and (max-width: 720px)
 {
@@ -226,15 +237,12 @@ h1, footer, .menuLink, header p {
         display: none;
     }
 
-
-
     /* para rehacer*/
     header {
         padding-top: 1rem;
         padding-bottom: 1rem;
         width: 100%;
-        max-height: 10rem;
-        
+        max-height: 12rem;
       }
     
     
@@ -307,6 +315,9 @@ h1, footer, .menuLink, header p {
         display: block;
     }
     
+    .menu li{
+        transition: border-bottom 0.5s;
+    }
     .menu li:hover{
         padding-bottom: 2px;
         border-bottom: 4px solid gold;
@@ -381,27 +392,113 @@ h1, footer, .menuLink, header p {
         max-height: 100%;
     }
     
-    
-    .section1{
-        height: 40%;
-        margin-left:5%;
-        margin-right: 5%;
-        margin-bottom: 2vh;
+    .course1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .course1 video{
+        width: 60%;
         
     }
-    
+    .section1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 1fr;
+        grid-template-areas: 
+            "titleCo titleCo"
+            "cardCo1 cardCo2";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        margin-left: 20%;
+        margin-bottom: 2rem;
+        column-gap: 2vw;
+        width: 60vw;
+        height: 50vh;
+        row-gap: 1vh;
+    }
+    .section1 h3{
+        grid-area: titleCo;
+        justify-self: center;
+        padding: 1rem;
+    }
+    .section1Co{
+        background-color: teal;
+        border-radius: 8px;
+        height: 30vh;
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        column-gap: 4px;
+        text-align: center;
+        padding: 4px;
+    }
+    .section1 a{
+        color: black;
+    }
+    .CoBtn{
+        width: 6vw;
+        height: 4vh;
+        border-radius: 2rem;
+        background-color: gold;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 #Co1{
+        grid-area: cardCo1;
+    }
+    .section1 #Co2{
+        grid-area: cardCo2;
+    }
     .section2{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
         background-color: #2A4359;
         color: white;
         padding: 2rem;
-        height: 60%;
+        height: 80vh;
+        width: 100vw;
     }
-    
+    .section2 div{
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        height: 60%;
+        padding: 5vh 5vw;
+        background-color: #011126;
+        text-align: center;
+        
+    }
     .section3{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         background-color: #011126;
         color: white;
         padding: 2rem;
+        height: 80vh;
+        width: 100vw;
+    }
+    .section3 div{
+        width: 60vw;
+        display: flex;
+        align-items: center;
         height: 60%;
+        width: 60vw;
+        padding: 5vh 5vw;
+        background-color: #2A4359;
     }
     
     .instructorCard{
@@ -480,6 +577,7 @@ h1, footer, .menuLink, header p {
         font-weight: 700;
     }
     
+
     .absolute{
         position: relative;
     }
@@ -528,10 +626,11 @@ h1, footer, .menuLink, header p {
         background-color: #2A4359;
         color: white;
         width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 8vh;
-        padding: 4vh 4vw;
+        border-radius: 0 0 4rem 0;
+        padding: 5vh 5vw 7vh 5vw;
     }
     .formCard div{
         display: block;
@@ -566,13 +665,13 @@ h1, footer, .menuLink, header p {
         font-weight: 600;
         background-color: gold;
         border: none;
-        border-radius: 4px;
+        border-radius: 2rem;
         float: right;
     }
     
     
     .gridGalery{
-        margin: 5vh 5vw;
+        margin: 5vh 5vw 0vh 5vw;
         width: 80vw;
         height: 100vh;
         display: grid;
@@ -610,6 +709,8 @@ h1, footer, .menuLink, header p {
     }
     
     .smallGridGalery img{
+        width: 100%;
+        height: 100%;
         background-color: white;
         border-radius: 8px;
         transition: transform 1s;
@@ -622,6 +723,7 @@ h1, footer, .menuLink, header p {
 
 
 footer{
+    bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
