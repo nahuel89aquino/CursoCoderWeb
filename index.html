@@ -4,6 +4,8 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,73 +16,110 @@
 <body>
   <!-- Inicio de Header-->
   <header>
-    <div class="navBar">
-      <a class="iconNavBar" href="index.html">
-        <img src="images/LogoTiroCba.png" width="100" height="60">
-      </a>
-      <nav>
-        <ul class="menu">
-          <li class="menuItem"><a href="pages/galery.html" class="menuLink">Galeria</a></li>
-          <li class="menuItem"><a href="pages/contact.html" class="menuLink">Contacto</a></li>
-          <li class="menuItem"><a href="#aboutUs" class="menuLink">Quienes somos</a></li>
-          <li class="menuItem"><a href="pages/courses.html" class="menuLink">Cursos</a>
-            <ul>
-              <li>Curso 1</li>
-              <li>Curso 2</li>
-              <li>Curso 3</li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-dark navbar-expand-md text-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/LogoTiroCba.png" width="100" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+          aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-md-end" id="navCollapse">
+          <ul class="navbar-nav ">
+            <li class="nav-item"><a href="#" class="nav-link active ">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="#aboutUs" class="nav-link">Quienes somos</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Cursos
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-light" href="#">Curso 1</a></li>
+                <li><a class="dropdown-item text-light" href="#">Curso 2</a></li>
+                <li><a class="dropdown-item text-light" href="#">Cusrso 3</a></li>
+              </ul>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="bg-dark  text-center text-light p-2 title-main">
     <h1>Cursos de Tiro</h1>
     <p> Ut est irure labore excepteur ut elit id.</p>
-  </header>
+  </div>
 
   <!-- Inicio de Main-->
   <main>
     <!-- Lista de cursos-->
     <article>
-      <section class="coursesBanner">
-        <h2>Nuestros Cursos</h2>
-        <div class="courseCard relative curso1">
-          <div class="courseInfo absolute">
-            <h3><a href="pages/course.html">Curso 1</a></h3>
-            <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
-              Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
-            </p>
-          </div>
-        </div>
+      <section>
 
-        <div class="courseCard relative curso2">
-          <div class="courseInfo absolute">
-            <h3><a href="pages/course.html">Curso 2</a></h3>
-            <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
-              Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
-            </p>
+        <h2 class="text-center">Nuestros Cursos</h2>
+        <div id="carouselCourses" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-
-        <div class="courseCard relative curso3">
-          <div class="courseInfo absolute">
-            <h3><a href="pages/course.html">Curso 3</a></h3>
-            <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
-              Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
-            </p>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/images/imagen1.jpg" class="d-block w-100" alt="curso 1">
+              <div class="carousel-caption d-none d-md-block bg-dark">
+                <h3><a class="text-light" href="pages/course.html">Curso 1</a></h3>
+                <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
+                  Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/imagen2.jpg" class="d-block w-100" alt="curso 2">
+              <div class="carousel-caption d-none d-md-block bg-dark">
+                <h3><a class="text-light" href="pages/course.html">Curso 2</a></h3>
+                <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
+                  Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/imagen3.jpg" class="d-block w-100" alt="curso 3">
+              <div class="carousel-caption d-none d-md-block bg-dark">
+                <h3><a class="text-light" href="pages/course.html">Curso 3</a></h3>
+                <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
+                  Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
+                </p>
+              </div>
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCourses" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCourses" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
       <!-- Detalles y caracteristicas de los cursos ofrecidos-->
-      <section class="coursesDetails">
-        <h2>Clases teóricas y prácticas</h2>
-        <div>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure libero optio voluptates unde
-            consequuntur, consequatur qui possimus voluptatem! Quam est eligendi sed magnam dolore. Minima, eveniet.
-            Laboriosam, aperiam nihil!</p>
+      <section class="container container-md py-4">
+        <h2 class="text-center">Clases teóricas y prácticas</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-12 bg-secondary text-light d-flex align-items-center">
+            <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure libero optio
+              voluptates unde
+              consequuntur, consequatur qui possimus voluptatem! Quam est eligendi sed magnam dolore. Minima, eveniet.
+              Laboriosam, aperiam nihil!</p>
+          </div>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/kvnWucZ3mH8" title="YouTube video player"
-            frameborder="0"
+          <iframe class="col-md-6 col-12 order-first" width="560" height="315"
+            src="https://www.youtube.com/embed/kvnWucZ3mH8" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -88,19 +127,24 @@
     </article>
 
     <!-- Presentacion del instructor-->
-    <aside>
-      <h2 id="aboutUs">Quienes somos</h2>
-      <div class="instructorCard absolute">
-        <img src="images/instructor.jpg" alt="instructor" class="instructorCardImage">
-        <div class="instructorCardInfo relative left">
-          <h3>Instructor</h3>
-          <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eligendi optio quasi dolore sit enim
-            perspiciatis. Doloremque corrupti nemo voluptate necessitatibus suscipit est explicabo vitae voluptatibus,
-            quod, minus sed itaque.</p>
-          <div class="instructorCardLinks">
-            <img src="icons/facebook-logo-1_icon-icons.com_73573.png" />
-            <img src="icons/whatsapp-black_100119.png" />
-            <img src="icons/Instagram_New_icon-icons.com_69008.png" />
+
+    <aside class="container py-4">
+      <h2 class="text-center" id="aboutUs">Quienes somos</h2>
+      <div class="row justify-content-center">
+        <img src="assets/images/instructor.jpg" alt="instructor" class="img-fluid col-md-8 col-12" id="imageInstructor">
+        <div class="col-12 col-md-6 bg-secondary text-light d-flex align-items-center">
+          <div class="row gy-4 text-center">
+            <h3>Instructor</h3>
+            <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eligendi optio quasi dolore sit
+              enim
+              perspiciatis. Doloremque corrupti nemo voluptate necessitatibus suscipit est explicabo vitae voluptatibus,
+              quod, minus sed itaque.</p>
+            <div>
+              <img class="icons invert" src="assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
+              <img class="icons invert" src="assets/icons/whatsapp-black_100119.png" />
+              <img class="icons invert" src="assets/icons/Instagram_New_icon-icons.com_69008.png" />
+            </div>
+
           </div>
         </div>
       </div>
@@ -108,19 +152,28 @@
   </main>
 
   <!-- Inicio de Footer-->
-  <footer>
-    <div>
-      <p><strong>Cursos de Tiro</strong><br>
-        <i>Córdoba, Argentina</i>
-      </p>
-    </div>
-    <div class="footerLinks">
-      <img src="icons/facebook-logo-1_icon-icons.com_73573.png" />
-      <img src="icons/whatsapp-black_100119.png" />
-      <img src="icons/Instagram_New_icon-icons.com_69008.png" />
+  <footer class="container-fluid bg-dark text-light">
+    <div
+      class="row d-flex d-flex align-items-center justify-content-center d-md-flex align-items-md-center justify-content-md-center ">
+      <div class="col-md-11 col-12 flex-grow-1 text-center">
+        <p><strong>Cursos de Tiro</strong><br>
+          <i>Córdoba, Argentina</i>
+        </p>
+      </div>
+      <div
+        class="col-12 col-md-1 d-flex align-items-center justify-content-center d-md-flex align-items-md-center justify-content-md-end">
+        <img class="icons invert" src="assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
+        <img class="icons invert" src="assets/icons/whatsapp-black_100119.png" />
+        <img class="icons invert" src="assets/icons/Instagram_New_icon-icons.com_69008.png" />
+      </div>
     </div>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
