@@ -4,19 +4,20 @@
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="description" content="Cursos de tiro práctico, Cordoba, Argentina">
+  <meta name="keywords"  content="TIRO, CURSOS DE TIRO, TIRO PRACTICO">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <title>TiroCba</title>
+  <title>Cursos de tiro</title>
 </head>
 
 <body>
   <!-- Inicio de Header-->
   <header>
-    <nav class="navbar navbar-dark navbar-expand-md text-light bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-md text-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="assets/images/LogoTiroCba.png" width="100" height="60">
@@ -27,19 +28,19 @@
         </button>
         <div class="collapse navbar-collapse justify-content-md-end" id="navCollapse">
           <ul class="navbar-nav ">
-            <li class="nav-item"><a href="#" class="nav-link active ">Inicio</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Galeria</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-            <li class="nav-item"><a href="#aboutUs" class="nav-link">Quienes somos</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <li class="nav-item navbar__items"><a href="#" class="nav-link">Inicio</a></li>
+            <li class="nav-item navbar__items"><a href="pages/gallery.html" class="nav-link">Galeria</a></li>
+            <li class="nav-item navbar__items"><a href="pages/contact.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item navbar__items"><a href="#aboutUs" class="nav-link">Quienes somos</a></li>
+            <li class="nav-item navbar__items dropdown">
+              <a class="nav-link dropdown-toggle" href="pages/courses.html" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Cursos
               </a>
               <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-light" href="#">Curso 1</a></li>
-                <li><a class="dropdown-item text-light" href="#">Curso 2</a></li>
-                <li><a class="dropdown-item text-light" href="#">Cusrso 3</a></li>
+                <li><a class="dropdown-item text-light" href="pages/course.html">Curso 1</a></li>
+                <li><a class="dropdown-item text-light" href="pages/course.html">Curso 2</a></li>
+                <li><a class="dropdown-item text-light" href="#">Curso 3</a></li>
               </ul>
             </li>
             </li>
@@ -48,7 +49,7 @@
       </div>
     </nav>
   </header>
-  <div class="bg-dark  text-center text-light p-2 title-main">
+  <div class="text-center text-light p-2 header__title header__title--color">
     <h1>Cursos de Tiro</h1>
     <p> Ut est irure labore excepteur ut elit id.</p>
   </div>
@@ -59,7 +60,7 @@
     <article>
       <section>
 
-        <h2 class="text-center">Nuestros Cursos</h2>
+        <h2 class="text-center body__subtitle">Nuestros Cursos</h2>
         <div id="carouselCourses" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="0" class="active"
@@ -109,7 +110,7 @@
 
       <!-- Detalles y caracteristicas de los cursos ofrecidos-->
       <section class="container container-md py-4">
-        <h2 class="text-center">Clases teóricas y prácticas</h2>
+        <h2 class="text-center body__subtitle">Clases teóricas y prácticas</h2>
         <div class="row justify-content-center">
           <div class="col-md-4 col-12 bg-secondary text-light d-flex align-items-center">
             <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure libero optio
@@ -129,9 +130,9 @@
     <!-- Presentacion del instructor-->
 
     <aside class="container py-4">
-      <h2 class="text-center" id="aboutUs">Quienes somos</h2>
+      <h2 class="text-center body__subtitle" id="aboutUs">Quienes somos</h2>
       <div class="row justify-content-center">
-        <img src="assets/images/instructor.jpg" alt="instructor" class="img-fluid col-md-8 col-12" id="imageInstructor">
+        <img src="assets/images/instructor.jpg" alt="instructor" class="img-fluid col-md-8 col-12 aside__card">
         <div class="col-12 col-md-6 bg-secondary text-light d-flex align-items-center">
           <div class="row gy-4 text-center">
             <h3>Instructor</h3>
@@ -140,9 +141,9 @@
               perspiciatis. Doloremque corrupti nemo voluptate necessitatibus suscipit est explicabo vitae voluptatibus,
               quod, minus sed itaque.</p>
             <div>
-              <img class="icons invert" src="assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
-              <img class="icons invert" src="assets/icons/whatsapp-black_100119.png" />
-              <img class="icons invert" src="assets/icons/Instagram_New_icon-icons.com_69008.png" />
+              <img class="body__icons" src="assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
+              <img class="body__icons" src="assets/icons/whatsapp-black_100119.png" />
+              <img class="body__icons" src="assets/icons/Instagram_New_icon-icons.com_69008.png" />
             </div>
 
           </div>
@@ -152,28 +153,22 @@
   </main>
 
   <!-- Inicio de Footer-->
-  <footer class="container-fluid bg-dark text-light">
-    <div
-      class="row d-flex d-flex align-items-center justify-content-center d-md-flex align-items-md-center justify-content-md-center ">
-      <div class="col-md-11 col-12 flex-grow-1 text-center">
+  <footer class="container-fluid text-light">
+    <div class="row d-flex align-items-center justify-content-center ">
+      <div class="col-12 flex-grow-1 text-center">
         <p><strong>Cursos de Tiro</strong><br>
           <i>Córdoba, Argentina</i>
         </p>
       </div>
-      <div
-        class="col-12 col-md-1 d-flex align-items-center justify-content-center d-md-flex align-items-md-center justify-content-md-end">
-        <img class="icons invert" src="assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
-        <img class="icons invert" src="assets/icons/whatsapp-black_100119.png" />
-        <img class="icons invert" src="assets/icons/Instagram_New_icon-icons.com_69008.png" />
+      <div class="col-12 d-flex align-items-center justify-content-center">
+        <img class="body__icons" src="assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
+        <img class="body__icons" src="assets/icons/whatsapp-black_100119.png" />
+        <img class="body__icons" src="assets/icons/Instagram_New_icon-icons.com_69008.png" />
       </div>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/js/dist/popover.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

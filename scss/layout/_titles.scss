@@ -1,0 +1,8 @@
+.header__title{
+    border: none;
+    background-color: map-get($my-colors, "color-1");
+}
+
+.header__title--color{
+    color: white;
+}

@@ -1,0 +1,4 @@
+@import '../abstract/variables';
+footer{
+    background-color: map-get($my-colors, "color-1" );
+}

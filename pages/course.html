@@ -4,49 +4,58 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TiroCba</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Curso 1</title>
 </head>
 
 <body>
     <!-- Inicio de Header-->
     <header>
-        <div class="navBar">
-            <a class="iconNavBar" href="../index.html">
-                <img src="../images/LogoTiroCba.png" width="100" height="60">
-            </a>
-            <nav>
-                <ul class="menu">
-                    <li class="menuItem"><a href="../pages/galery.html" class="menuLink">Galeria</a></li>
-                    <li class="menuItem"><a href="../pages/contact.html" class="menuLink">Contacto</a></li>
-                    <li class="menuItem"><a href="../index.html#aboutUs" class="menuLink">Quienes somos</a></li>
-                    <li class="menuItem"><a href="../pages/courses.html" class="menuLink">Cursos</a>
-                        <ul>
-                            <li>Curso 1</li>
-                            <li>Curso 2</li>
-                            <li>Curso 3</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <h1>Curso 1</h1>
-        <p>Ipsum sit labore irure fugiat Lorem qui cillum deserunt aute reprehenderit fugiat elit ea. Duis
-            adipisicing
-            reprehenderit voluptate quis tempor veniam deserunt. Ipsum ullamco adipisicing labore mollit officia
-            esse
-            eu
-            exercitation cupidatat Lorem magna mollit. Eiusmod Lorem ullamco commodo cupidatat amet consequat sit.
-
+        <nav class="navbar navbar-dark navbar-expand-md text-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/images/LogoTiroCba.png" width="100" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse"
+                    aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-md-end" id="navCollapse">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item navbar__items"><a href="../index.html" class="nav-link">Inicio</a></li>
+                        <li class="nav-item navbar__items"><a href="../pages/gallery.html" class="nav-link">Galeria</a>
+                        </li>
+                        <li class="nav-item navbar__items"><a href="../pages/contact.html" class="nav-link">Contacto</a>
+                        </li>
+                        <li class="nav-item navbar__items"><a href="../index.html#aboutUs" class="nav-link">Quienes
+                                somos</a></li>
+                        <li class="nav-item navbar__items dropdown">
+                            <a class="nav-link dropdown-toggle" href="pages/courses.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Cursos
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-light" href="../pages/course.html">Curso 1</a></li>
+                                <li><a class="dropdown-item text-light" href="../pages/course.html">Curso 2</a></li>
+                                <li><a class="dropdown-item text-light" href="../pages/course.html">Curso 3</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
     </header>
-    <main class="course1">
+    <main class="main__course mt-3">
         <video controls>
-            <source src="../videos/videoplayback_Trim.mp4" type="video/mp4">
+            <source src="../assets/videos/videoplayback_Trim.mp4" type="video/mp4">
         </video>
         <article>
-            <section class="section2">
+            <section class="section__desc1">
                 <h3>Que vas a aprender</h3>
                 <div>
                     <p>
@@ -59,7 +68,7 @@
                     </p>
                 </div>
             </section>
-            <section class="section3">
+            <section class="sectsection__desc2">
                 <h3>Modulos</h3>
                 <div>
                     <p>
@@ -72,25 +81,25 @@
                     </p>
                 </div>
             </section>
-            <section class="section1">
+            <section class="section__courseNextCo">
                 <h3>Proximas fechas</h3>
-                <div class="section1Co" id="Co1">
+                <div id="Co1">
                     <h4>Comision 1</h4>
                     <span>06/07/2021</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi sit eos rerum obcaecati
                         dicta quae, ullam saepe iste aliquam dolores debitis id eveniet autem aspernatur quis
                         necessitatibus! Quos, nesciunt.</p>
-                    <div class="CoBtn">
+                    <div class="section__courseNextCo-CoBtn">
                         <a href="../pages/registration.html">Aplicar</a>
                     </div>
                 </div>
-                <div class="section1Co" id="Co2">
+                <div id="Co2">
                     <h4>Comision 2</h4>
                     <span>8/07/2021</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur commodi sit eos rerum obcaecati
                         dicta quae, ullam saepe iste aliquam dolores debitis id eveniet autem aspernatur quis
                         necessitatibus! Quos, nesciunt.</p>
-                    <div class="CoBtn">
+                    <div class="section__courseNextCo-CoBtn">
                         <a href="../pages/registration.html">Aplicar</a>
                     </div>
                 </div>
@@ -98,18 +107,22 @@
         </article>
     </main>
     <!-- Inicio de Footer-->
-    <footer>
-        <div>
-            <p><strong>Cursos de Tiro</strong><br>
-                <i>Córdoba, Argentina</i>
-            </p>
-        </div>
-        <div class="footerLinks">
-            <img src="../icons/facebook-logo-1_icon-icons.com_73573.png" />
-            <img src="../icons/whatsapp-black_100119.png" />
-            <img src="../icons/Instagram_New_icon-icons.com_69008.png" />
+    <footer class="container-fluid text-light">
+        <div class="row d-flex align-items-center justify-content-center ">
+            <div class="col-12 flex-grow-1 text-center">
+                <p><strong>Cursos de Tiro</strong><br>
+                    <i>Córdoba, Argentina</i>
+                </p>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <img class="body__icons" src="../assets/icons/facebook-logo-1_icon-icons.com_73573.png" />
+                <img class="body__icons" src="../assets/icons/whatsapp-black_100119.png" />
+                <img class="body__icons" src="../assets/icons/Instagram_New_icon-icons.com_69008.png" />
+            </div>
         </div>
     </footer>
+    <script src="../node_modules/bootstrap/js/dist/popover.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
