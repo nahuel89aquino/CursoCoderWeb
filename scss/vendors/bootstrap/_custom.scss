@@ -18,5 +18,6 @@ $theme-colors: (
   "dark":       $dark
   );
   
+  $dropdown-link-hover-bg: map-get($my-colors, "color-3");
 @import "../../../bootstrap/scss/bootstrap.scss";
   

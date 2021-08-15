@@ -1,19 +1,6 @@
 @import "../abstract/variables";
- @mixin titules-white ($font-weight:600){
-    color: white;
-    font-weight: $font-weight;
-    padding: 1rem;
- }
 
-
-body{
+ body{
     background-color: map-get($my-colors, "color-1" );
-    font-family: 'Roboto', sans-serif;    
-    .body__subtitle{
-        @include titules-white(700)
-    };
-    h3{
-        @include titules-white()
-    }
-    
+    font-family: 'Roboto', sans-serif;      
 }

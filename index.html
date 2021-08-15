@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Cursos de tiro práctico, Cordoba, Argentina">
-  <meta name="keywords"  content="TIRO, CURSOS DE TIRO, TIRO PRACTICO">
+  <meta name="keywords" content="TIRO, CURSOS DE TIRO, TIRO PRACTICO">
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +37,7 @@
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Cursos
               </a>
-              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu navbar__dropdown" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item text-light" href="pages/course.html">Curso 1</a></li>
                 <li><a class="dropdown-item text-light" href="pages/course.html">Curso 2</a></li>
                 <li><a class="dropdown-item text-light" href="#">Curso 3</a></li>
@@ -49,91 +49,106 @@
       </div>
     </nav>
   </header>
-  <div class="text-center text-light p-2 header__title header__title--color">
-    <h1>Cursos de Tiro</h1>
-    <p> Ut est irure labore excepteur ut elit id.</p>
-  </div>
 
   <!-- Inicio de Main-->
   <main>
+    <div class="text-center text-light p-2 header__title header__title--color">
+      <h1>Cursos de Tiro</h1>
+      <p> Ut est irure labore excepteur ut elit id.</p>
+    </div>
     <!-- Lista de cursos-->
     <article>
-      <section>
-
-        <h2 class="text-center body__subtitle">Nuestros Cursos</h2>
-        <div id="carouselCourses" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselCourses" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <section class="container-fluid">
+        <div class="row justify-content-start">
+          <h2 class="col-9 left">Nuestros Cursos</h2>
+        </div>
+        <div class="div__carousel">
+          <div id="carouselCourses" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block p-3 div__carousel--color">
+                  <h3><a class="text-light" href="pages/course.html">Curso 1</a></h3>
+                  <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut
+                    cupidatat.
+                    Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
+                  </p>
+                </div>
+                <img src="assets/images/imagen1.jpg" class="d-block" alt="curso 1">
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block p-3 div__carousel--color">
+                  <h3><a class="text-light" href="pages/course.html">Curso 2</a></h3>
+                  <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut
+                    cupidatat.
+                    Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
+                  </p>
+                </div>
+                <img src="assets/images/imagen2.jpg" class="d-block" alt="curso 2">
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block p-3 div__carousel--color">
+                  <h3><a class="text-light" href="pages/course.html">Curso 3</a></h3>
+                  <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut
+                    cupidatat.
+                    Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
+                  </p>
+                </div>
+                <img src="assets/images/imagen3.jpg" class="d-block" alt="curso 3">
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCourses" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCourses" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCourses" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCourses" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/images/imagen1.jpg" class="d-block w-100" alt="curso 1">
-              <div class="carousel-caption d-none d-md-block bg-dark">
-                <h3><a class="text-light" href="pages/course.html">Curso 1</a></h3>
-                <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
-                  Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/imagen2.jpg" class="d-block w-100" alt="curso 2">
-              <div class="carousel-caption d-none d-md-block bg-dark">
-                <h3><a class="text-light" href="pages/course.html">Curso 2</a></h3>
-                <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
-                  Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/imagen3.jpg" class="d-block w-100" alt="curso 3">
-              <div class="carousel-caption d-none d-md-block bg-dark">
-                <h3><a class="text-light" href="pages/course.html">Curso 3</a></h3>
-                <p>Elit ex deserunt nisi esse officia esse occaecat. Anim mollit culpa ad eiusmod nostrud ut cupidatat.
-                  Ullamco pariatur non minim sit sunt minim magna cillum do. Deserunt deserunt culpa aliquip magna in.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCourses" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselCourses" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
 
       <!-- Detalles y caracteristicas de los cursos ofrecidos-->
-      <section class="container container-md py-4">
-        <h2 class="text-center body__subtitle">Clases teóricas y prácticas</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-4 col-12 bg-secondary text-light d-flex align-items-center">
-            <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure libero optio
-              voluptates unde
-              consequuntur, consequatur qui possimus voluptatem! Quam est eligendi sed magnam dolore. Minima, eveniet.
-              Laboriosam, aperiam nihil!</p>
-          </div>
+      <section class="mt-5 container-fluid">
+        <div class="row justify-content-end">
+          <h2 class="col-9 right">Clases teóricas y prácticas</h2>
+        </div>
+        <div class="container container-md py-4">
 
-          <iframe class="col-md-6 col-12 order-first" width="560" height="315"
-            src="https://www.youtube.com/embed/kvnWucZ3mH8" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-12 text-light d-flex align-items-center section_box--color">
+              <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iure libero optio
+                voluptates unde
+                consequuntur, consequatur qui possimus voluptatem! Quam est eligendi sed magnam dolore. Minima, eveniet.
+                Laboriosam, aperiam nihil!</p>
+            </div>
+
+            <iframe class="col-md-6 col-12 order-first" width="560" height="315"
+              src="https://www.youtube.com/embed/kvnWucZ3mH8" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </section>
     </article>
 
     <!-- Presentacion del instructor-->
 
-    <aside class="container py-4">
-      <h2 class="text-center body__subtitle" id="aboutUs">Quienes somos</h2>
-      <div class="row justify-content-center">
-        <img src="assets/images/instructor.jpg" alt="instructor" class="img-fluid col-md-8 col-12 aside__card">
-        <div class="col-12 col-md-6 bg-secondary text-light d-flex align-items-center">
+    <aside class="container-fluid py-4">
+      <div class="row justify-content-start">
+        <h2 class="col-9 left" id="aboutUs">Quienes somos</h2>
+      </div>
+      <div class="row section_instructor">
+        <img src="assets/images/instructor.jpg" alt="instructor" class="img-fluid col-md-8 col-12 aside__image">
+        <div class="col-10 text-light d-flex align-items-start p-2 section_box--color section_instructor--flex section_instructor--absolute">
           <div class="row gy-4 text-center">
             <h3>Instructor</h3>
             <p id="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eligendi optio quasi dolore sit
@@ -153,7 +168,7 @@
   </main>
 
   <!-- Inicio de Footer-->
-  <footer class="container-fluid text-light">
+  <footer class="container text-light">
     <div class="row d-flex align-items-center justify-content-center ">
       <div class="col-12 flex-grow-1 text-center">
         <p><strong>Cursos de Tiro</strong><br>
@@ -170,5 +185,4 @@
   <script src="bootstrap/js/dist/popover.js"></script>
   <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

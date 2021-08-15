@@ -1,0 +1,63 @@
+@import "../components/titles";
+
+main{
+    .div__carousel{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        .div__carousel--color{
+            background-color: map-get($my-colors, "color-1" );
+        }
+        img{
+            width: 100vw;
+        }
+
+    }
+    .left{
+        @include subtitle--left;
+        @include titules-white(700);
+    }
+    .right{
+        @include subtitle--right;
+        @include titules-white(700);
+    }
+
+    .section_box--color{
+        background-color: map-get($my-colors, "color-2");
+    }
+
+    .section_instructor{
+        @media only screen and (min-width:1024px){
+            position: relative;
+            justify-content: start;
+            margin-left: 20%;
+            .section_instructor--absolute{
+                align-self: center;
+                position: absolute;
+                left: 40%;
+                width: 40%;
+                height: 90%;
+            }
+            .section_instructor--flex{
+                @extend .section_instructor--absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+        }
+        @media only screen and (max-width:1024px){
+            justify-content: center;
+            .section_instructor--flex{
+                height: 60vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 1rem;
+                padding: 2rem;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,30 @@
+@import "../abstract/gradients";
+
+
+@mixin subtitle--left{
+    padding: 1rem;
+    border-radius: 0 3rem 3rem 0;
+    @include gradient-1;
+    text-align: center;
+}
+@mixin subtitle--right{
+    padding: 1rem;
+    border-radius: 3rem 0 0 3rem;
+    @include gradient-2;
+    text-align: center;
+}
+
+
+@mixin titules-white ($font-weight:600){
+    color: white;
+    font-weight: $font-weight;
+ }
+
+.header__title{
+    border: none;
+    background-color: map-get($my-colors, "color-1");
+}
+
+.header__title--color{
+    color: white;
+}

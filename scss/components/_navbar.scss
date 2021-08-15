@@ -4,3 +4,7 @@
     color: white;
     font-size: 25px;
 }
+.navbar__dropdown{
+    background-color: map-get($my-colors, "color-2" );
+    padding: 0px;
+}

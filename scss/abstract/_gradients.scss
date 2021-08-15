@@ -1,4 +1,8 @@
 @mixin gradient-1 {
-    background: rgb(42,67,89);
-    background: linear-gradient(90deg, rgba(42,67,89,1) 26%, rgba(73,109,140,0.8939950980392157) 68%);
+    background: rgb(1,17,38);
+    background: linear-gradient(90deg, rgba(1,17,38,1) 0%, rgba(73,109,140,1) 73%, rgba(182,208,242,1) 100%);
+}
+@mixin gradient-2 {
+    background: rgb(1,17,38);
+background: linear-gradient(270deg, rgba(1,17,38,1) 0%, rgba(73,109,140,1) 73%, rgba(182,208,242,1) 100%);
 }

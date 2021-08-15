@@ -4,11 +4,11 @@
     background-color: $color;
     border-radius: $bd-radius;
     padding: 2rem;
-    margin: 1rem;
+    width: 95vw;
 }
     
 .form__contact{
-    @include form__box(map-get($my-colors , "color-4" ), 8px);
+    @include form__box(map-get($my-colors , "color-3" ), 4rem);
     .form__contact--title{
         text-align: center;
         font-weight: 700;

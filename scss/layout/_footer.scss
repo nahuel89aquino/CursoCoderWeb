@@ -1,4 +1,7 @@
 @import '../abstract/variables';
 footer{
+    width: 60vw;
+    padding: 2rem 0;
+    border-top: 0.2rem solid map-get($my-colors, "color-2" );
     background-color: map-get($my-colors, "color-1" );
 }
