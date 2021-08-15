@@ -1,8 +1,8 @@
 @import "../../abstract/variables";
 
-@import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
-@import "../../../node_modules/bootstrap/scss/bootstrap-utilities.scss";
-@import "../../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../../../bootstrap/scss/bootstrap-grid.scss";
+@import "../../../bootstrap/scss/bootstrap-utilities.scss";
+@import "../../../bootstrap/scss/bootstrap-reboot.scss";
 
 $btn-border-radius: 2rem;
 $primary : map-get($my-colors, "color-6" );
@@ -18,5 +18,5 @@ $theme-colors: (
   "dark":       $dark
   );
   
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../../bootstrap/scss/bootstrap.scss";
   
