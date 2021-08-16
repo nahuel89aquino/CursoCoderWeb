@@ -1,62 +1,18 @@
 @import "../abstract/variables";
 @import "../abstract/gradients";
+@import "../components/titles";
 
 section{
     .gallery__title{
-        padding-left: 8px;
-        border-radius: 0 2rem 2rem 0;
-        @include gradient-1;
-        h2{
-            text-align: start;
-        }
+        @include subtitle--left;
+        @include titules-white(700);
     }
-    .gallery{
-        margin: 5vh 5vw 0vh 5vw;
-        width: 80vw;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 10vh 1fr ;
-        grid-template-areas:
-            "titleGalery titleGalery " 
-            "bigImage smallGridGalery ";
-        justify-items: center;
-        align-items: center;
-        column-gap: 10px;
-        .galery__subtitulo{
-            grid-area: titleGalery;
-        }
-        .gallery__bigImages{
-            background-color: white;
-            border-radius: 8px;
-            width: 500px;
-            height: auto;
-            grid-area: bigImage;
-            transition: transform 1s;
-            &:hover{transform: scale(1.1);};
-        }
-        .galery__smallImages{
-            grid-area: smallGridGalery;
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 10px;
-            row-gap: 10px;
-            justify-items: center;
-            align-items: center;
-            img{
-                width: 100%;
-                height: 100%;
-                background-color: white;
-                border-radius: 8px;
-                transition: transform 1s;
-            &:hover{transform: scale(1.1);};
-                
-            }
-        }
-        
+
+    .card{
+        background-color: map-get($my-colors, "color-2" );
+        border-color: white;
     }
-    
+
 }
 
 

@@ -18,6 +18,8 @@ $theme-colors: (
   "dark":       $dark
   );
   
-  $dropdown-link-hover-bg: map-get($my-colors, "color-3");
+$dropdown-link-hover-bg: map-get($my-colors, "color-3");
+$offcanvas-horizontal-width: 80vw;
+$offcanvas-bg-color: rgba(1,17,38,0.5);
 @import "../../../bootstrap/scss/bootstrap.scss";
   

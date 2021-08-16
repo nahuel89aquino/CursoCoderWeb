@@ -10703,7 +10703,7 @@ textarea.form-control-lg {
   flex-direction: column;
   max-width: 100%;
   visibility: hidden;
-  background-color: #fff;
+  background-color: rgba(1, 17, 38, 0.5);
   background-clip: padding-box;
   outline: 0;
   transition: transform 0.3s ease-in-out; }
@@ -10734,14 +10734,14 @@ textarea.form-control-lg {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 400px;
+  width: 80vw;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(-100%); }
 
 .offcanvas-end {
   top: 0;
   right: 0;
-  width: 400px;
+  width: 80vw;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
   transform: translateX(100%); }
 
@@ -13647,53 +13647,25 @@ footer {
     color: white;
     font-weight: 700; }
 
-section .gallery__title {
-  padding-left: 8px;
-  border-radius: 0 2rem 2rem 0;
-  background: #011126;
-  background: linear-gradient(90deg, #011126 0%, #496d8c 73%, #b6d0f2 100%); }
-  section .gallery__title h2, section .gallery__title .h2 {
-    text-align: start; }
+.header__title {
+  border: none;
+  background-color: #011126; }
 
-section .gallery {
-  margin: 5vh 5vw 0vh 5vw;
-  width: 80vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 10vh 1fr;
-  grid-template-areas: "titleGalery titleGalery "  "bigImage smallGridGalery ";
-  justify-items: center;
-  align-items: center;
-  column-gap: 10px; }
-  section .gallery .galery__subtitulo {
-    grid-area: titleGalery; }
-  section .gallery .gallery__bigImages {
-    background-color: white;
-    border-radius: 8px;
-    width: 500px;
-    height: auto;
-    grid-area: bigImage;
-    transition: transform 1s; }
-    section .gallery .gallery__bigImages:hover {
-      transform: scale(1.1); }
-  section .gallery .galery__smallImages {
-    grid-area: smallGridGalery;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-    justify-items: center;
-    align-items: center; }
-    section .gallery .galery__smallImages img {
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      border-radius: 8px;
-      transition: transform 1s; }
-      section .gallery .galery__smallImages img:hover {
-        transform: scale(1.1); }
+.header__title--color {
+  color: white; }
+
+section .gallery__title {
+  padding: 1rem;
+  border-radius: 0 3rem 3rem 0;
+  background: #011126;
+  background: linear-gradient(90deg, #011126 0%, #496d8c 73%, #b6d0f2 100%);
+  text-align: center;
+  color: white;
+  font-weight: 700; }
+
+section .card {
+  background-color: #2A4359;
+  border-color: white; }
 
 /*.smallGridGalery img:hover{
     transform: scale(1.1);
