@@ -48,23 +48,25 @@
     </nav>
   </header>
   <main>
-    <form class="container-fluid form__contact">
-      <h2 class=" form__contact--title">Contactanos!</h2>
+    <div class="col-10 contact__title">
+      <h2>Contactanos!</h2>
+    </div>
+    <form class="container-fluid form__contact m-3">
       <div class="row mb-3 justify-content-center">
-        <label for="name" class="mb-3 col-md-1 col-form-label-md">Nombre</label>
-        <div class="col-md-11">
+        <label for="name" class="mb-3 col-md-2 col-form-label-md">Nombre</label>
+        <div class="col-md-10">
           <input type="text" name="name" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="last_name" class="mb-3 col-md-1 col-form-label-md">Apellido</label>
-        <div class="col-md-11">
+        <label for="last_name" class="mb-3 col-md-2 col-form-label-md">Apellido</label>
+        <div class="col-md-10">
           <input type="text" name="last_name" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="email" class="mb-3 col-md-1 col-form-label-md">Correo Electronico</label>
-        <div class="col-md-11">
+        <label for="email" class="mb-3 col-md-2 col-form-label-md">Correo Electronico</label>
+        <div class="col-md-10">
           <input type="email" name="email" class="form-control">
         </div>
       </div>
@@ -87,12 +89,12 @@
 
       <textarea name="detail" class="form-control mb-3" cols="100" rows="10" placeholder="Comentario.."></textarea>
       <div class="container">
-        <div class="row gx-2 mb-3 justify-content-md-end align-items-space-arrow">
-          <div class="col-2">
-            <button type="button" class="btn btn-primary contact__button" type="reset">Borrar</button>
+        <div class="row g-2 mb-3 justify-content-center justify-content-md-end align-items-space-arrow">
+          <div class="col-12 col-md-2">
+            <button type="button" class="btn btn-primary form__contact--button" type="reset">Borrar</button>
           </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-primary contact__button" type="submit">Enviar</button>
+          <div class="col-12 col-md-2">
+            <button type="button" class="btn btn-primary form__contact--button" type="submit">Enviar</button>
           </div>
         </div>
 

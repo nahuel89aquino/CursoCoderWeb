@@ -1,0 +1,8 @@
+@import "../components/titles";
+
+main{
+    .contact__title{
+        @include subtitle--left;
+        @include titules-white(700);
+    }
+}

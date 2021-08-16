@@ -8,11 +8,20 @@
 }
     
 .form__contact{
-    @include form__box(map-get($my-colors , "color-3" ), 4rem);
+    @include form__box(map-get($my-colors , "color-2" ), 4rem);
     .form__contact--title{
         text-align: center;
         font-weight: 700;
         padding-bottom: 2rem;
+    }
+    .form__contact--button{
+        width: 100%;
+    }
+    label{
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-style: italic;
     }
 }
 .form__registration{

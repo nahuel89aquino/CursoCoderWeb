@@ -5,6 +5,9 @@
 header {
   border: none; }
 
+body a {
+  text-decoration: none; }
+
 /*!
  * Bootstrap Grid v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7598,7 +7601,7 @@ progress {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   appearance: none;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media (prefers-reduced-motion: reduce) {
     .form-control {
@@ -7717,10 +7720,10 @@ textarea.form-control-lg {
     cursor: pointer; }
   .form-control-color::-moz-color-swatch {
     height: 1.5em;
-    border-radius: 0.25rem; }
+    border-radius: 2rem; }
   .form-control-color::-webkit-color-swatch {
     height: 1.5em;
-    border-radius: 0.25rem; }
+    border-radius: 2rem; }
 
 .form-select {
   display: block;
@@ -7986,7 +7989,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: #e9ecef;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem; }
+  border-radius: 2rem; }
 
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
@@ -13616,7 +13619,7 @@ footer {
   padding: 0px; }
 
 .form__contact {
-  background-color: #496D8C;
+  background-color: #2A4359;
   border-radius: 4rem;
   padding: 2rem;
   width: 95vw; }
@@ -13624,6 +13627,13 @@ footer {
     text-align: center;
     font-weight: 700;
     padding-bottom: 2rem; }
+  .form__contact .form__contact--button {
+    width: 100%; }
+  .form__contact label {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: italic; }
 
 .form__registration {
   background-color: #84A4BF;
@@ -13667,9 +13677,22 @@ section .card {
   background-color: #2A4359;
   border-color: white; }
 
-/*.smallGridGalery img:hover{
-    transform: scale(1.1);
-}*/
+.header__title {
+  border: none;
+  background-color: #011126; }
+
+.header__title--color {
+  color: white; }
+
+main .contact__title {
+  padding: 1rem;
+  border-radius: 0 3rem 3rem 0;
+  background: #011126;
+  background: linear-gradient(90deg, #011126 0%, #496d8c 73%, #b6d0f2 100%);
+  text-align: center;
+  color: white;
+  font-weight: 700; }
+
 .main__course {
   display: flex;
   flex-direction: column;
