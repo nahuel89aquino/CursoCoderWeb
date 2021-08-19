@@ -48,51 +48,52 @@
     </nav>
   </header>
   <main>
-    <h1>Formulario de registro</h1>
-    <form action="" class="form__registration">
-      <h2 class="form__registration--title">Curso 1 </h2>
-      <div class="container">
-        <div class="row gx-1">
-          <h3 class="col-2">Comision 1</h3>
-          <button type="button" class="col-2 btn btn-primary inspectCourse__button mb-3" type="reset">
-            <a href="../pages/course.html">Ver</a>
-          </button>
-
+    <div class="col-10 registration__title ">
+      <h2>Formulario de registro</h2>
+    </div>
+    <form action="" class="container-fluid form__registration m-3">
+      <div class="row justify-content-center text-center m-4 g-3 registration__subtitle">
+        <div class="col-11 col-md-8 card p-3">
+            <div class="card-body ">
+                <h3><a class="text-dark">CURSO 1</a></h3>
+                <h4 class="text-dark">Comision 1</h4>
+            </div>
         </div>
-      </div>
+    </div>
+      
       <div class="row mb-3 justify-content-center">
-        <label for="name" class="mb-3 col-md-1 col-form-label-md">Nombre</label>
-        <div class="col-md-11">
+        <label for="name" class="mb-3 col-md-2 col-form-label-md">Nombre</label>
+        <div class="col-md-10">
           <input type="text" name="name" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="name" class="mb-3 col-md-1 col-form-label-md">Apellido</label>
-        <div class="col-md-11">
+        <label for="name" class="mb-3 col-md-2 col-form-label-md">Apellido</label>
+        <div class="col-md-10">
           <input type="text" name="last_name" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="name" class="mb-3 col-md-1 col-form-label-md">Correo Electronico</label>
-        <div class="col-md-11">
+        <label for="name" class="mb-3 col-md-2 col-form-label-md">Correo Electronico</label>
+        <div class="col-md-10">
           <input type="email" name="email" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="name" class="mb-3 col-md-1 col-form-label-md">Ciudad</label>
-        <div class="col-md-11">
+        <label for="name" class="mb-3 col-md-2 col-form-label-md">Ciudad</label>
+        <div class="col-md-10">
           <input type="text" name="city" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="province" class="mb-3 col-md-1 col-form-label-md">Provincia</label>
-        <div class="col-md-11">
+        <label for="province" class="mb-3 col-md-2 col-form-label-md">Provincia</label>
+        <div class="col-md-10">
           <input type="text" name="province" class="form-control">
         </div>
       </div>
       <div class="row mb-3 justify-content-center">
-        <label for="country" class="mb-3 col-md-1 col-form-label-md">Pais</label>
-        <div class="col-md-11">
+        <label for="country" class="mb-3 col-md-2 col-form-label-md">Pais</label>
+        <div class="col-md-10">
           <input type="text" name="country" class="form-control">
         </div>
       </div>
@@ -114,16 +115,13 @@
       </div>
 
       <textarea name="detail" class="form-control mb-3" cols="100" rows="10" placeholder="Comentario.."></textarea>
-      <div class="container">
-        <div class="row gx-2 mb-3 justify-content-md-end align-items-space-arrow">
-          <div class="col-2">
-            <button type="button" class="btn btn-primary contact__button" type="reset">Borrar</button>
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-primary contact__button" type="submit">Enviar</button>
-          </div>
+      <div class="row g-2 mb-3 justify-content-center justify-content-md-end align-items-space-arrow">
+        <div class="col-12 col-md-2">
+          <button type="button" class="btn btn-primary form__registration--button" type="reset">Borrar</button>
         </div>
-
+        <div class="col-12 col-md-2">
+          <button type="button" class="btn btn-primary form__registration--button" type="submit">Enviar</button>
+        </div>
       </div>
     </form>
   </main>

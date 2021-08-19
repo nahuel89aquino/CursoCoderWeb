@@ -13637,7 +13637,7 @@ footer {
 
 .form__registration {
   background-color: #2A4359;
-  border-radius: 2rem;
+  border-radius: 4rem;
   padding: 2rem;
   width: 95vw; }
   .form__registration .form__registration--title {
@@ -13645,6 +13645,13 @@ footer {
     font-weight: 600;
     padding-bottom: 2rem;
     color: white; }
+  .form__registration .form__registration--button {
+    width: 100%; }
+  .form__registration label {
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: italic; }
 
 .contact__button {
   width: 160px; }
@@ -13692,6 +13699,28 @@ main .contact__title {
   text-align: center;
   color: white;
   font-weight: 700; }
+
+.header__title {
+  border: none;
+  background-color: #011126; }
+
+.header__title--color {
+  color: white; }
+
+main .registration__title {
+  padding: 1rem;
+  border-radius: 0 3rem 3rem 0;
+  background: #011126;
+  background: linear-gradient(90deg, #011126 0%, #496d8c 73%, #b6d0f2 100%);
+  text-align: center;
+  color: white;
+  font-weight: 700; }
+
+main .registration__subtitle .card {
+  background-color: #84A4BF;
+  border-radius: 2rem; }
+  main .registration__subtitle .card h3, main .registration__subtitle .card .h3 {
+    font-weight: 800; }
 
 .header__title {
   border: none;

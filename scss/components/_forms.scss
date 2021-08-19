@@ -25,11 +25,20 @@
     }
 }
 .form__registration{
-    @include form__box(map-get($my-colors , "color-2" ), 2rem);
+    @include form__box(map-get($my-colors , "color-2" ), 4rem);
     .form__registration--title{
         text-align: center;
         font-weight: 600;
         padding-bottom: 2rem;
         color: white;
+    }
+    .form__registration--button{
+        width: 100%;
+    }
+    label{
+        color: white;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-style: italic;
     }
 }

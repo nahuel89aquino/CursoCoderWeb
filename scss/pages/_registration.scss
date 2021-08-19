@@ -1,0 +1,17 @@
+@import "../components/titles";
+@import "../abstract/variables";
+main{
+    .registration__title{
+        @include subtitle--left;
+        @include titules-white(700);
+    }
+    .registration__subtitle{
+        .card{
+            background-color: map-get($my-colors, "color-4" );
+            border-radius: 2rem;
+            h3{
+                font-weight: 800;
+            }
+        }
+    }
+}
